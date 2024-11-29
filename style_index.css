@@ -1,0 +1,232 @@
+/* page bg color F7ECDE*/
+body {
+    background-color: #F7ECDE;
+}
+
+#header {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none solid rgb(53, 46, 40);
+    position: relative;
+    width: fit-content;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 0.5s ease-in-out; 
+    z-index: -1;
+}
+
+#header:hover::before {
+    height: 70%; 
+}
+
+#BookmarkInputs {
+    width: 75%;
+    border-bottom: 2px black dotted;
+    border-top: 2px black dotted;
+}
+
+/* Gradient Text Styling */
+.gradient-text {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(to right, #40A55B, #c4ad52);
+    /* Green to yellow gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+h2::before,
+h2::after {
+    content: "\f02e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #6b9a4a;
+    margin-right: 8px;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+#BookmarkInputs label {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+#BookmarkLabel::before {
+    content: "\f02d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #212529;
+    margin-right: 8px;
+}
+
+#UrlLabel::before {
+    content: "\f0c1";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #212529;
+    margin-right: 8px;
+}
+
+#submitBtn:hover {
+    color: #fff;
+    background-color: #bb4120;
+    border-color: #a03315;
+}
+
+#submitBtn {
+    background-color: #d1512d;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Table Container */
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* thead {
+    background-color: #f9f9f9;
+    
+} */
+
+thead th {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px #dee2e6 solid;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+button {
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Visit Button */
+.visit-btn {
+    background-color: #8bc34a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visit-btn:hover {
+    background-color: #7cb342;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.Btn:active {
+    color: black;
+    background-color: #fff;
+    border: 1px black solid;
+}
+
+
+/* Modal container */
+.modal {
+    
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+  
+  /* Modal content */
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #000;
+  }
+  
+  /* Styled list */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .icon {
+    color: red;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  

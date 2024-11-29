@@ -5,10 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="./style_index.css">
-    <title>Quotes App</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Pacifico:wght@400;700&display=swap" rel="stylesheet">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Righteous:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Bookmark</title>
   </head>
   <body>
     
+      <h1 id="header" class="text-center container">Bookmark</h1>
+
+    
+    <div id="BookmarkInputs" class="container p-2">
+      <h2 class="gradient-text my-2 ">
+        Bookmark your favorite sites
+      </h2>
+
+      <label id="BookmarkLabel"for="BookmarkName" class=" my-2">Site Name</label> <br>
+      <input type="text" id="BookmarkName" class=" my-2 form-control" oninput="ValidateInput(this.id)" placeholder="Bookmark Name">
+
+      <br>
+      <label id="UrlLabel" for="BookmarkURL" class=" my-2">Site URL</label><br>
+      <input type="url" id="BookmarkURL" class=" my-2 form-control"oninput="ValidateInput(this.id)"  placeholder="Website URL">
+        <div class="container d-flex justify-content-center ">
+          <button class="px-5" id="submitBtn" onclick="AddBookmark()">Submit</button>
+        </div>
+      <!-- Modal -->
+<div id="alertModal" class="modal d-none">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Site Name or Url is not valid, Please follow the rules below</h2>
+    <ul>
+      <li>Site name must contain at least 3 characters</li>
+      <li>Site URL must be a valid one</li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+
+    <div class="table-container">
+      <table>
+          <thead>
+              <tr>
+                  <th>Index</th>
+                  <th>Website Name</th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+              </tr>
+          </thead>
+          <tbody id="tbody">
+              
+          </tbody>
+      </table>
+  </div>
+    </div>
    <script src="./js/index.js"></script>
   </body>
 </html>
