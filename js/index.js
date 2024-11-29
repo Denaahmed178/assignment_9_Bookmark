@@ -58,7 +58,7 @@ function AddBookmark() {
     else{
        document.getElementById("alertModal").classList.remove('d-none');
        document.getElementById("alertModal").classList.add('d-block');
-
+       
         clearIputs();
     }
    
@@ -71,6 +71,11 @@ function clearIputs(){
     inputUrl.classList.remove('is-valid');
     inputName.classList.remove('is-invalid');
     inputUrl.classList.remove('is-invalid');
+}
+function CloseAlert(){
+    document.getElementById("alertModal").classList.add('d-none');
+       document.getElementById("alertModal").classList.remove('d-block');
+       
 }
 function displayBookmarks(){
     document.getElementById("tbody").innerHTML = " ";
